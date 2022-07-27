@@ -142,7 +142,7 @@ toc: true
 
 ### Arithmetic Expressions
 
-<strong style="color: red";>문법의 포스터 자식 예시인</strong> 전체 산술 표현을 다루기 위해 문법을 확장하자. 표현식(&lt;expr&gt;)이 합계 또는 차이 또는 용어이며, 용어는 곱이나 나눗셈 또는 요인이며, 요인은 숫자 또는 괄호 표현식이라는 것을 알 수 있다. 거의 모든 규칙은 재귀를 가질 수 있으므로 (1 + 2) * (3.4 / 5.6 - 789)와 같은 임의의 복잡한 표현을 허용한다.
+<strong style="color: red">문법의 포스터 자식 예시인</strong> 전체 산술 표현을 다루기 위해 문법을 확장하자. 표현식(&lt;expr&gt;)이 합계 또는 차이 또는 용어이며, 용어는 곱이나 나눗셈 또는 요인이며, 요인은 숫자 또는 괄호 표현식이라는 것을 알 수 있다. 거의 모든 규칙은 재귀를 가질 수 있으므로 (1 + 2) * (3.4 / 5.6 - 789)와 같은 임의의 복잡한 표현을 허용한다.
 
 ```
 <start>   ::= <expr>
@@ -425,7 +425,7 @@ def simple_grammar_fuzzer(grammar: Grammar,
 > SVG(show_diagram(syntax_diagram_expr(EXPR_GRAMMAR['<term>'][0])))
 > ```
 > ![fuzzer3-2](../src/fuzzer3_2.png)
-> <strong style="color: red";>This is the first alternative of `<term>` – a `<factor>` followed by `*` and a `<term>`.</strong>
+> <strong style="color: red">This is the first alternative of `<term>` – a `<factor>` followed by `*` and a `<term>`.</strong>
 > 다음으로, 대체 식을 표시하기 위해 **syntax_diagram_alt()** 를 정의한다.
 >
 > ```python
@@ -693,7 +693,7 @@ syntax_diagram(TITLE_GRAMMAR)
  'ft:/www.google.com:42\x0f']
 ```
 
-처음 10개의 **fuzz()** 호출은 시드된 입력을 반환하지만(설계된 대로), 나중의 호출은 다시 임의의 돌연변이를 생성한다. **MutationFuzzer** 대신 **MutationCoverageFuzzer** 를 사용하여, <strong style="color: red";>다시 범위별로 검색을 안내할 수 있으므로 여러 세계의 최고를 하나로 모을 수 있다.</strong>
+처음 10개의 **fuzz()** 호출은 시드된 입력을 반환하지만(설계된 대로), 나중의 호출은 다시 임의의 돌연변이를 생성한다. **MutationFuzzer** 대신 **MutationCoverageFuzzer** 를 사용하여, <strong style="color: red">다시 범위별로 검색을 안내할 수 있으므로 여러 세계의 최고를 하나로 모을 수 있다.</strong>
 
 ---
 ## A Grammar Toolbox
